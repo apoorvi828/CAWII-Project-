@@ -1,20 +1,173 @@
-{% extends 'base.html' %}
-{% block content %}
-<div class="container-fluid px-0">
-
-</div>
-<div class="container py-5">
-
-</div>
-{% endblock %}
-{% block js %}
-<script>
-
-</script>
-{% endblock %}
-{% block css %}
-<style>
-
-</style>
-{% endblock %}
-{% block head %}{% endblock %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>About - Women Safety Analytics Project</title>
+        <script src="https://cdn.tailwindcss.com"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Roboto:wght@300;400;700&display=swap');
+            body {
+                font-family: 'Roboto', sans-serif;
+            }
+            h1, h2, h3 {
+                font-family: 'Playfair Display', serif;
+            }
+        </style>
+    </head>
+    <body class="bg-gray-100">
+        <header class="bg-black text-white p-4 fixed w-full z-10">
+            <nav class="container mx-auto flex justify-between items-center">
+                <h1 class="text-2xl font-bold">Women Safety Analytics</h1>
+                <ul class="flex space-x-6">
+                    <li><a href="index.html" class="hover:text-yellow-400 transition duration-300">Home</a></li>
+                    <li><a href="#project-overview" class="hover:text-yellow-400 transition duration-300">Project Overview</a></li>
+                    <li><a href="#our-impact" class="hover:text-yellow-400 transition duration-300">Our Impact</a></li>
+                    <li><a href="#timeline" class="hover:text-yellow-400 transition duration-300">Timeline</a></li>
+                    <li><a href="#partners" class="hover:text-yellow-400 transition duration-300">Partners</a></li>
+                </ul>
+            </nav>
+        </header>
+    
+        <main>
+            <section id="hero" class="pt-24 pb-12 bg-black text-white">
+                <div class="container mx-auto px-4">
+                    <h1 class="text-6xl font-bold mb-4" data-aos="fade-up">About Our Project</h1>
+                    <p class="text-xl text-gray-400 mb-8" data-aos="fade-up" data-aos-delay="100">Unveiling the data to foster a safer India for women</p>
+                </div>
+            </section>
+    
+            <section id="project-overview" class="py-20 bg-white">
+                <div class="container mx-auto px-4">
+                    <h2 class="text-4xl font-bold mb-12 text-center" data-aos="fade-up">Project Overview</h2>
+                    <div class="flex flex-wrap -mx-4">
+                        <div class="w-full md:w-1/2 px-4 mb-8" data-aos="fade-right">
+                            <h3 class="text-2xl font-bold mb-4 text-yellow-600">Our Mission</h3>
+                            <p class="text-gray-700 mb-4">The Women Safety Analytics Project aims to leverage data science and analytics to shed light on the critical issue of crimes against women in India. By analyzing comprehensive datasets, we seek to uncover patterns, trends, and insights that can inform policy decisions and drive societal change.</p>
+                            <p class="text-gray-700">Our goal is to provide a data-driven foundation for initiatives aimed at enhancing women's safety and promoting gender equality across the nation.</p>
+                        </div>
+                        <div class="w-full md:w-1/2 px-4 mb-8" data-aos="fade-left">
+                            <img src="/api/placeholder/600/400" alt="Project team working" class="w-full h-auto rounded-lg shadow-lg">
+                        </div>
+                    </div>
+                </div>
+            </section>
+    
+            <section id="our-impact" class="py-20 bg-gray-100">
+                <div class="container mx-auto px-4">
+                    <h2 class="text-4xl font-bold mb-12 text-center" data-aos="fade-up">Our Impact</h2>
+                    <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                        <div class="bg-white p-6 rounded-lg shadow-lg" data-aos="fade-up">
+                            <h3 class="text-2xl font-bold mb-4 text-yellow-600">Informing Policy</h3>
+                            <p class="text-gray-700">Our findings have been cited in parliamentary discussions and have influenced local policy decisions across multiple states.</p>
+                        </div>
+                        <div class="bg-white p-6 rounded-lg shadow-lg" data-aos="fade-up" data-aos-delay="100">
+                            <h3 class="text-2xl font-bold mb-4 text-yellow-600">Raising Awareness</h3>
+                            <p class="text-gray-700">Through media partnerships, we've reached millions of citizens, fostering a more informed public dialogue on women's safety.</p>
+                        </div>
+                        <div class="bg-white p-6 rounded-lg shadow-lg" data-aos="fade-up" data-aos-delay="200">
+                            <h3 class="text-2xl font-bold mb-4 text-yellow-600">Empowering NGOs</h3>
+                            <p class="text-gray-700">Our data and insights have equipped numerous NGOs with the information needed to target their efforts more effectively.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+    
+            <section id="timeline" class="py-20 bg-black text-white">
+                <div class="container mx-auto px-4">
+                    <h2 class="text-4xl font-bold mb-12 text-center" data-aos="fade-up">Project Timeline</h2>
+                    <div class="relative">
+                        <div class="absolute left-1/2 transform -translate-x-1/2 h-full w-1 bg-yellow-400"></div>
+                        <div class="relative z-10">
+                            <div class="mb-8 flex items-center w-full" data-aos="fade-right">
+                                <div class="w-6 h-6 bg-yellow-400 rounded-full flex items-center justify-center">
+                                    <div class="w-3 h-3 bg-black rounded-full"></div>
+                                </div>
+                                <div class="ml-6">
+                                    <h3 class="text-xl font-bold mb-2">2020: Project Inception</h3>
+                                    <p>Initial data collection and team formation</p>
+                                </div>
+                            </div>
+                            <div class="mb-8 flex items-center w-full justify-end" data-aos="fade-left">
+                                <div class="mr-6 text-right">
+                                    <h3 class="text-xl font-bold mb-2">2021: First Major Analysis</h3>
+                                    <p>Publication of our first comprehensive report</p>
+                                </div>
+                                <div class="w-6 h-6 bg-yellow-400 rounded-full flex items-center justify-center">
+                                    <div class="w-3 h-3 bg-black rounded-full"></div>
+                                </div>
+                            </div>
+                            <div class="mb-8 flex items-center w-full" data-aos="fade-right">
+                                <div class="w-6 h-6 bg-yellow-400 rounded-full flex items-center justify-center">
+                                    <div class="w-3 h-3 bg-black rounded-full"></div>
+                                </div>
+                                <div class="ml-6">
+                                    <h3 class="text-xl font-bold mb-2">2022: Expansion of Scope</h3>
+                                    <p>Inclusion of socio-economic factors in our analysis</p>
+                                </div>
+                            </div>
+                            <div class="flex items-center w-full justify-end" data-aos="fade-left">
+                                <div class="mr-6 text-right">
+                                    <h3 class="text-xl font-bold mb-2">2023: National Recognition</h3>
+                                    <p>Our work cited in national policy discussions</p>
+                                </div>
+                                <div class="w-6 h-6 bg-yellow-400 rounded-full flex items-center justify-center">
+                                    <div class="w-3 h-3 bg-black rounded-full"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+    
+            <section id="partners" class="py-20 bg-white">
+                <div class="container mx-auto px-4">
+                    <h2 class="text-4xl font-bold mb-12 text-center" data-aos="fade-up">Our Partners</h2>
+                    <div class="grid grid-cols-2 md:grid-cols-4 gap-8">
+                        <div class="text-center" data-aos="fade-up">
+                            <img src="/api/placeholder/150/150" alt="Partner 1" class="mx-auto mb-4">
+                            <p class="font-bold">National Crime Records Bureau</p>
+                        </div>
+                        <div class="text-center" data-aos="fade-up" data-aos-delay="100">
+                            <img src="/api/placeholder/150/150" alt="Partner 2" class="mx-auto mb-4">
+                            <p class="font-bold">Ministry of Women and Child Development</p>
+                        </div>
+                        <div class="text-center" data-aos="fade-up" data-aos-delay="200">
+                            <img src="/api/placeholder/150/150" alt="Partner 3" class="mx-auto mb-4">
+                            <p class="font-bold">UN Women India</p>
+                        </div>
+                        <div class="text-center" data-aos="fade-up" data-aos-delay="300">
+                            <img src="/api/placeholder/150/150" alt="Partner 4" class="mx-auto mb-4">
+                            <p class="font-bold">National Commission for Women</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+    
+        <footer class="bg-gray-900 text-white py-8">
+            <div class="container mx-auto px-4 text-center">
+                <p>&copy; 2024 Women Safety Analytics. All rights reserved.</p>
+            </div>
+        </footer>
+    
+        <script>
+            AOS.init({
+                duration: 1000,
+                once: true,
+            });
+        </script>
+    </body>
+    </html>
+</body>
+</html>
